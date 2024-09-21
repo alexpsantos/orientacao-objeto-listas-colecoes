@@ -1,3 +1,5 @@
+package br.com.alex.screenmatch.principal;
+
 import br.com.alex.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alex.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alex.screenmatch.modelos.Episodio;
