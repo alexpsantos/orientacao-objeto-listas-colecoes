@@ -4,7 +4,7 @@ import br.com.alex.screenmatch.modelos.Filme;
 import br.com.alex.screenmatch.modelos.Serie;
 import br.com.alex.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class PrincipalComLista {
     public static void main(String[] args) {
@@ -31,11 +31,25 @@ public class PrincipalComLista {
                 System.out.println("Classificação: " + filme.getClassificacao());
 
             }
-
-
-
         }
 
+        List<String> buscarPorNome = new ArrayList<>();
+        buscarPorNome.add("Mimi");
+        buscarPorNome.add("Alex");
+        buscarPorNome.add("Ted");
+        buscarPorNome.add("Mila");
 
+        System.out.println(buscarPorNome);
+
+        Collections.sort(buscarPorNome);
+        System.out.println("Após ordenação");
+        System.out.println(buscarPorNome);
+
+        Collections.sort(lista);
+        System.out.println(lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano");
+        System.out.println(lista);
     }
 }
